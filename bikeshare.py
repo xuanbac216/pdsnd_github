@@ -46,7 +46,7 @@ def get_filters():
         if day in DAY_OF_WEEEKS:
             break
         else:
-            print('The Day is invalid, please check it again')
+            print('The Day is invalid, please check it again!')
 
     print('-'*40)
     return city, month, day
@@ -179,7 +179,7 @@ def user_stats(df):
 
 def display_data(df):
     """Displays data"""
-    view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n').lower()
+    view_data = input('\nWould you like to view 5 rows of individual trip data? Please enter yes or no:\n').lower()
     if view_data.lower() != 'yes':
         return
     
