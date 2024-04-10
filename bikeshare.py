@@ -194,15 +194,17 @@ def display_data(df):
 
 def main():
     while True:
+        # get filter
         city, month, day = get_filters()
+        # get data
         df = load_data(city, month, day)
-
+        # calculate 
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
+        # print
         display_data(df)
-
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
