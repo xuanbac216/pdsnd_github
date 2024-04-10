@@ -3,7 +3,7 @@
 # Project Title
 Programming for Data Science with Python 
 # Description
-Describe what your project is about and what it does
+This is an example I used to practice exercises from Udacity
 
 # Files used
 bikeshare
